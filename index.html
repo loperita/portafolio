@@ -132,6 +132,11 @@
   .topbar nav a { font-family: var(--font-mono); font-size: .78rem; text-decoration: none; color: var(--ink-soft); letter-spacing: .02em; transition: color .2s; }
   .topbar nav a:hover { color: var(--accent); }
   .topbar-actions { display: flex; align-items: center; gap: 1.2rem; }
+  .nav-pdf { font-family: var(--font-mono); font-size: .78rem; text-decoration: none; color: var(--ink);
+    border: 1px solid var(--line-strong); border-radius: 2px; padding: .42rem .8rem; letter-spacing: .02em;
+    white-space: nowrap; transition: border-color .2s, color .2s, background .2s; }
+  .nav-pdf:hover { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 8%, transparent); }
+  @media (max-width: 640px){ .nav-pdf { display: none; } }
   .theme-toggle { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%;
     border: 1px solid var(--line-strong); background: transparent; color: var(--ink-soft); cursor: pointer;
     transition: color .2s, border-color .2s, transform .2s; flex: none; padding: 0; }
@@ -396,6 +401,7 @@
         <a href="#stack">Stack</a>
         <a href="#contacto">Contacto</a>
       </nav>
+      <a class="nav-pdf" href="Pablo-Moreno-Portafolio.pdf" download>Descargar PDF ↓</a>
       <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Cambiar tema">
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
@@ -630,6 +636,7 @@
       <div class="cta-row">
         <a class="btn btn-primary" href="mailto:pablomoreno44@gmail.com">Escríbeme por correo →</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/pablo-moreno-develop/" target="_blank" rel="noopener">Conectar en LinkedIn</a>
+        <a class="btn btn-ghost" href="Pablo-Moreno-Portafolio.pdf" download>Descargar PDF ↓</a>
       </div>
     </div>
   </div>
