@@ -172,8 +172,10 @@
   @media (max-width: 820px){ .vision-grid { grid-template-columns: 1fr; gap: 2.4rem; } }
   .vision .eyebrow { color: #A9D9A0; }
   .vision .eyebrow::before { background: #A9D9A0; opacity: .8; }
-  .vision-statement { font-family: var(--font-display); font-size: clamp(1.7rem, 3.6vw, 2.6rem); line-height: 1.15;
-    letter-spacing: -0.015em; margin: 0 0 1.4rem; color: #F2F7EF; }
+  .vision-heading { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+    text-transform: uppercase; letter-spacing: .02em; line-height: 1.1; margin: 0 0 1rem; color: #EFF6EA; }
+  .vision-statement { font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.55rem); line-height: 1.4;
+    letter-spacing: -0.01em; margin: 0 0 1.3rem; color: #F2F7EF; }
   .vision-statement .hl { color: #C6EBBB; font-style: italic; }
   .vision-sub { color: #C4D6BC; font-size: 1.08rem; line-height: 1.6; max-width: 48ch; margin: 0; }
   .vision-sub b { color: #fff; font-weight: 600; }
@@ -428,8 +430,8 @@
   <div class="wrap">
     <div class="vision-grid">
       <div class="vision-lead reveal">
-        <p class="eyebrow">Mi visión</p>
-        <h2 class="vision-statement">Un <span class="hl">ecosistema</span> de desarrollo de software <span class="hl">integral</span>, cultivado a la medida de tu negocio.</h2>
+        <h2 class="vision-heading">Mi visión</h2>
+        <p class="vision-statement">Un <span class="hl">ecosistema</span> de desarrollo de software <span class="hl">integral</span>, cultivado a la medida de tu negocio.</p>
         <p class="vision-sub">No entrego piezas sueltas. Diseño, construyo y hago crecer tu producto —<b>web</b>, <b>backend</b> y <b>móvil</b>— como un sistema vivo: un solo interlocutor, arquitectura limpia y código que evoluciona contigo.</p>
       </div>
       <ul class="vision-pillars reveal">
