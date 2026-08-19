@@ -15,7 +15,7 @@
     --paper:        #ECEDE4;
     --surface:      #F6F7F0;
     --surface-2:    #FBFBF6;
-    --band:         color-mix(in srgb, var(--accent) 6%, var(--surface));
+    --band:         color-mix(in srgb, var(--accent) 13%, var(--paper));
     --ink:          #181C14;
     --ink-soft:     #565E4E;
     --ink-faint:    #8B917E;
@@ -245,7 +245,7 @@
   .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
   @media (max-width: 820px){ .cards { grid-template-columns: 1fr; } }
   .card {
-    background: var(--surface); border: 1px solid var(--line); border-radius: 4px;
+    background: var(--surface-2); border: 1px solid var(--line-strong); border-radius: 4px;
     padding: 1.7rem 1.6rem; box-shadow: var(--shadow-card); position: relative;
     transition: transform .2s ease, border-color .2s, box-shadow .3s; text-decoration: none; color: inherit;
     display: flex; flex-direction: column;
