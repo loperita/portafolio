@@ -224,10 +224,11 @@
   .lede .grow { color: var(--accent); font-style: italic; }
 
   /* ---------- Brand wordmark ---------- */
-  .hero .brand-word { font-family: var(--font-brand); font-weight: 800; font-size: clamp(1.2rem, 6.2vw, 3.4rem);
+  .hero .brand-word { font-family: var(--font-brand); font-weight: 800; font-size: clamp(1.2rem, 6.2vw, 2.95rem);
     text-transform: uppercase; white-space: nowrap; line-height: .95; letter-spacing: -0.015em; margin: .2rem 0 1.4rem;
     background: linear-gradient(102deg, var(--accent-2), var(--accent) 52%, color-mix(in srgb, var(--accent) 68%, #000));
     -webkit-background-clip: text; background-clip: text; color: transparent; }
+  @media (min-width: 861px){ .hero .brand-word { font-size: clamp(1.2rem, 4.6vw, 2.95rem); } .hero-grid { gap: clamp(2rem, 4vw, 3rem); } }
   @supports not ((-webkit-background-clip: text) or (background-clip: text)) {
     .hero .brand-word { background: none; color: var(--accent); }
   }
@@ -492,6 +493,20 @@
   .path-a { font-family: var(--font-mono); font-size: .76rem; color: var(--ink-soft); margin-top: .35rem; transition: color .2s; }
   .path:hover .path-a { color: var(--accent); }
 
+  /* ---------- Franja de resultados ---------- */
+  .proof { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
+  .proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  @media (max-width: 760px){ .proof-grid { grid-template-columns: repeat(2, 1fr); } }
+  .proof-item { padding: 1.5rem 1.2rem; border-left: 1px solid var(--line); }
+  .proof-item:first-child { border-left: none; }
+  @media (max-width: 760px){
+    .proof-item { padding: 1.2rem .9rem; }
+    .proof-item:nth-child(3) { border-left: none; }
+    .proof-item:nth-child(n+3) { border-top: 1px solid var(--line); }
+  }
+  .proof-n { display: block; font-family: var(--font-brand); font-weight: 800; font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1; color: var(--accent); letter-spacing: -0.01em; }
+  .proof-l { display: block; margin-top: .45rem; font-size: .86rem; line-height: 1.4; color: var(--ink-soft); }
+
   /* ---------- Para empresas ---------- */
   .hire-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 1.1rem; margin-bottom: 2rem; }
   @media (max-width: 820px){ .hire-grid { grid-template-columns: 1fr; } }
@@ -576,6 +591,18 @@
   </div>
 </header>
 
+<!-- Resultados -->
+<section class="proof" aria-label="Resultados">
+  <div class="wrap">
+    <div class="proof-grid stagger">
+      <div class="proof-item"><span class="proof-n">8</span><span class="proof-l">empresas grandes usan Katuq, plataforma en la que desarrollé</span></div>
+      <div class="proof-item"><span class="proof-n">+15</span><span class="proof-l">comercios operan y facturan en la misma plataforma</span></div>
+      <div class="proof-item"><span class="proof-n">+50</span><span class="proof-l">tests automatizados en el motor de Knife Poker</span></div>
+      <div class="proof-item"><span class="proof-n">99<small style="font-size:.45em">/100</small></span><span class="proof-l">rendimiento de este sitio en Lighthouse (móvil)</span></div>
+    </div>
+  </div>
+</section>
+
 <!-- Visión empresarial -->
 <section class="section vision" id="vision">
   <div class="wrap">
@@ -607,7 +634,7 @@
         <h3>Qué aporto a tu equipo</h3>
         <ul>
           <li><b>Fullstack + móvil:</b> Angular y React en el front, Node.js, Spring Boot y Firebase en el back, Flutter en móvil.</li>
-          <li><b>Software en producción:</b> optimización, nuevas funciones e integraciones en apps con usuarios reales (plataforma Katuq).</li>
+          <li><b>Software en producción:</b> optimización, nuevas funciones e integraciones en Katuq, plataforma usada por 8 empresas grandes y más de 15 comercios.</li>
           <li><b>Integraciones con terceros:</b> facturación con Siigo, mapas con Waze y Google Maps.</li>
           <li><b>Calidad:</b> lógica desacoplada de la interfaz y tests automatizados donde importan.</li>
         </ul>
@@ -719,7 +746,7 @@
           <p>Una app de delivery cuyo corazón es la geolocalización: si va lenta, el mensajero pierde tiempo, batería y datos. Optimicé ese núcleo e integré mapas confiables.</p>
           <div class="result">
             <span class="lbl">Resultado</span>
-            <span class="val">Navegación más fluida con <b>Waze y Google Maps</b>, interfaz renovada para el uso en la calle, y nuevas funciones de perfil y seguimiento de rendimiento para los mensajeros.</span>
+            <span class="val">Navegación más fluida con <b>Waze y Google Maps</b>, interfaz renovada para el uso en la calle, y nuevas funciones de perfil y seguimiento de rendimiento, en una app que hoy usan <b>8 empresas grandes y más de 15 comercios</b>.</span>
           </div>
           <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Waze API</span><span class="tag">Google Maps</span><span class="tag">UX</span></div>
           <button class="case-more" type="button" data-dialog="dlg-mensajeros">Ver caso completo →</button>
@@ -736,7 +763,7 @@
           <p>Los comercios de la plataforma facturaban en Siigo, una herramienta aparte: doble captura de datos, más errores, más tiempo perdido.</p>
           <div class="result">
             <span class="lbl">Resultado</span>
-            <span class="val">Integré <b>Siigo</b> dentro de Katuq: los comercios gestionan y facturan desde un <b>único ecosistema</b>, sin duplicar trabajo ni saltar entre sistemas.</span>
+            <span class="val">Integré <b>Siigo</b> dentro de Katuq: los comercios gestionan y facturan desde un <b>único ecosistema</b>, sin duplicar trabajo. Hoy la usan <b>8 empresas grandes y más de 15 comercios</b>.</span>
           </div>
           <div class="tags"><span class="tag">Angular</span><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">Express 4</span><span class="tag">CommonJS</span><span class="tag">Firebase</span><span class="tag">Integración de APIs</span><span class="tag">Siigo</span></div>
           <button class="case-more" type="button" data-dialog="dlg-comercios">Ver caso completo →</button>
@@ -890,7 +917,7 @@
         <div class="row"><div class="k">Situación</div><div class="v">App de delivery cuyo corazón es la <b>geolocalización</b>: si va lenta, el mensajero pierde tiempo, batería y datos. Además, la interfaz necesitaba renovación y faltaban funciones para gestionar el trabajo.</div></div>
         <div class="row"><div class="k">Tarea</div><div class="v">Optimizar geolocalización y rutas, integrar mapas confiables, renovar la interfaz y añadir personalización de perfil y seguimiento de rendimiento.</div></div>
         <div class="row"><div class="k">Acción</div><div class="v">Optimicé el módulo de <b>geolocalización y rutas</b>; integré <b>Waze y Google Maps</b>; rediseñé la UI para el uso real en la calle; añadí <b>perfil personalizable</b> y <b>seguimiento de rendimiento y eficiencia</b> del mensajero.</div></div>
-        <div class="row"><div class="k">Resultado</div><div class="v">Navegación más fluida apoyada en mapas confiables, interfaz más clara y usable, y mensajeros con más control sobre su desempeño — una app más completa dentro del ecosistema Katuq.</div></div>
+        <div class="row"><div class="k">Resultado</div><div class="v">Navegación más fluida apoyada en mapas confiables, interfaz más clara y usable, y mensajeros con más control sobre su desempeño. La app está en producción y hoy la usan <b>8 empresas grandes y más de 15 comercios</b>.</div></div>
       </div>
       <p class="dlg-eyebrow">Galería</p>
       <div class="gallery">
@@ -921,7 +948,7 @@
         <div class="row"><div class="k">Situación</div><div class="v">Los comercios de la plataforma facturaban en <b>Siigo</b>, una herramienta aparte: doble captura de datos, más errores y tiempo perdido.</div></div>
         <div class="row"><div class="k">Tarea</div><div class="v">Conectar Katuq y Siigo para que los comercios pudieran <b>facturar sin salir de la plataforma</b>, unificando su operación.</div></div>
         <div class="row"><div class="k">Acción</div><div class="v">Desarrollé la integración <b>Katuq ↔ Siigo</b> (frontend Angular + Firebase); diseñé el flujo para que, al ingresar un comercio, su facturación quedara conectada al ecosistema, evitando la doble captura. También trabajé en la <b>interfaz gráfica del sitio</b>: paneles, formularios y experiencia de uso.</div></div>
-        <div class="row"><div class="k">Resultado</div><div class="v">Un <b>único ecosistema</b>: los comercios gestionan y facturan desde Katuq, con menos trabajo manual y errores, onboarding más simple y una plataforma más atractiva para captar comercios.</div></div>
+        <div class="row"><div class="k">Resultado</div><div class="v">Un <b>único ecosistema</b>: los comercios gestionan y facturan desde Katuq, con menos trabajo manual y errores, onboarding más simple y una plataforma más atractiva para captar comercios. Hoy operan en ella <b>8 empresas grandes y más de 15 comercios</b>.</div></div>
       </div>
       <p class="dlg-eyebrow">Galería</p>
       <div class="gallery">
