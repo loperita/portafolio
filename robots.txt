@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loperita.github.io/portafolio/sitemap.xml
