@@ -48,7 +48,7 @@
     "https://www.linkedin.com/in/pablo-moreno-develop/",
     "https://github.com/loperita"
   ],
-  "knowsAbout": ["Desarrollo web", "Desarrollo de apps móviles", "Flutter", "Dart", "Angular", "React", "Node.js", "Express", "Spring Boot", "Python", "SQL", "Firebase", "Optimización de rendimiento"],
+  "knowsAbout": ["Desarrollo web", "Desarrollo de apps móviles", "Flutter", "Dart", "Kotlin", "Jetpack Compose", "Angular", "React", "Node.js", "Express", "Spring Boot", "Python", "SQL", "Firebase", "Optimización de rendimiento"],
   "knowsLanguage": ["es", "en"]
 }
 </script>
@@ -628,7 +628,7 @@
     <div class="proof-grid stagger">
       <div class="proof-item"><span class="proof-n">8</span><span class="proof-l">empresas grandes usan Katuq, plataforma en la que desarrollé</span></div>
       <div class="proof-item"><span class="proof-n">+15</span><span class="proof-l">comercios operan y facturan en la misma plataforma</span></div>
-      <div class="proof-item"><span class="proof-n">+50</span><span class="proof-l">tests automatizados en el motor de Knife Poker</span></div>
+      <div class="proof-item"><span class="proof-n">+100</span><span class="proof-l">tests automatizados en Knife Poker, mi app de póker en Kotlin</span></div>
       <div class="proof-item"><span class="proof-n">99<small style="font-size:.45em">/100</small></span><span class="proof-l">rendimiento de este sitio en Lighthouse (móvil)</span></div>
     </div>
   </div>
@@ -664,7 +664,7 @@
       <div class="hire-card">
         <h3>Qué aporto a tu equipo</h3>
         <ul>
-          <li><b>Fullstack + móvil:</b> Angular y React en el front, Node.js, Spring Boot y Firebase en el back, Flutter en móvil.</li>
+          <li><b>Fullstack + móvil:</b> Angular y React en el front, Node.js, Spring Boot y Firebase en el back, Flutter y Kotlin (Jetpack Compose) en móvil.</li>
           <li><b>1 año en producción en Katuq:</b> módulos de logística, app de deliveries e integraciones en una plataforma usada por 8 empresas grandes y más de 15 comercios.</li>
           <li><b>Integraciones con terceros:</b> facturación con Siigo, mapas con Waze y Google Maps.</li>
           <li><b>Calidad:</b> lógica desacoplada de la interfaz y tests automatizados donde importan.</li>
@@ -759,14 +759,14 @@
           <img src="img/knife-poker-preview.webp" width="540" height="405" alt="Knife Poker — vista previa" loading="lazy" />
         </button>
         <div class="case-body">
-          <div class="case-meta"><span class="idx">01</span><span class="kind">App móvil · producto</span></div>
+          <div class="case-meta"><span class="idx">01</span><span class="kind">App móvil · producto propio</span></div>
           <h3>Knife Poker — Análisis de Texas Hold'em</h3>
-          <p>App móvil que calcula las probabilidades reales de una mano de póker y decide, con matemáticas, si conviene pagar. Motor de cálculo propio, hecho desde cero.</p>
+          <p>App móvil que calcula las probabilidades reales de una mano de póker y decide, con matemáticas, si conviene pagar. La construí primero en Flutter y luego la reescribí nativa en Kotlin.</p>
           <div class="result">
             <span class="lbl">Resultado</span>
-            <span class="val">Motor en Dart puro con simulación <b>Monte Carlo</b>, cálculo en segundo plano para no congelar la interfaz, y <b>~56 tests</b> automatizados que garantizan cálculos correctos.</span>
+            <span class="val">Motor de póker propio con simulación <b>Monte Carlo</b>, llevado de Dart a <b>Kotlin puro</b>. La versión nativa ya supera a la original (tablas de rangos, noticias sin conexión) y la respaldan <b>116 tests</b> automatizados.</span>
           </div>
-          <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Monte Carlo</span><span class="tag">CustomPainter</span><span class="tag">Testing</span></div>
+          <div class="tags"><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Monte Carlo</span><span class="tag">Testing</span></div>
           <button class="case-more" type="button" data-dialog="dlg-knife">Ver caso completo →</button>
         </div>
       </article>
@@ -844,7 +844,7 @@
       </div>
       <div class="stack-col">
         <h3>Mobile</h3>
-        <ul><li>Flutter</li><li>Dart</li></ul>
+        <ul><li>Flutter · Dart</li><li>Kotlin · Jetpack Compose</li></ul>
       </div>
       <div class="stack-col">
         <h3>Infra &amp; tools</h3>
@@ -934,14 +934,14 @@
       <button class="dlg-close" type="button" aria-label="Cerrar">×</button>
     </div>
     <div class="dlg-body">
-      <div class="tags"><span class="tag">Flutter 3</span><span class="tag">Dart 3</span><span class="tag">Monte Carlo</span><span class="tag">isolates</span><span class="tag">CustomPainter</span><span class="tag">~56 tests</span></div>
+      <div class="tags"><span class="tag">Kotlin</span><span class="tag">Jetpack Compose</span><span class="tag">Material 3</span><span class="tag">Ktor</span><span class="tag">Flutter 3</span><span class="tag">Dart 3</span><span class="tag">Monte Carlo</span><span class="tag">116 tests</span></div>
       <div class="star">
         <div class="row"><div class="k">Situación</div><div class="v">El póker se gana con <b>decisiones matemáticas</b>, no con intuición. Calcular a mano las probabilidades reales de una mano y cruzarlas con el dinero en juego es complejo y lento; las herramientas existentes son de escritorio y en inglés.</div></div>
-        <div class="row"><div class="k">Tarea</div><div class="v">Construir de punta a punta un <b>motor de póker</b> (evaluar manos, calcular probabilidades y decidir) y una <b>interfaz móvil fluida</b>, con calidad de producto real: probado, mantenible y con identidad propia.</div></div>
-        <div class="row"><div class="k">Acción</div><div class="v">Motor en <b>Dart puro</b> desacoplado de la UI; equity por <b>Monte Carlo + enumeración exacta</b>; calculadora de decisión (pot odds, EV, implied odds); cálculo en <b>isolate</b> para no congelar la interfaz; <b>~56 tests</b>; branding completo con fondo procedural.</div></div>
-        <div class="row"><div class="k">Resultado</div><div class="v">Calculadora de ODDS funcional que entrega la probabilidad de ganar y una decisión clara (<b>PAGAR / FOLD</b>) al instante; motor robusto validado por tests; app fluida; producto con identidad propia y arquitectura lista para crecer.</div></div>
+        <div class="row"><div class="k">Tarea</div><div class="v">Construir de punta a punta un <b>motor de póker</b> (evaluar manos, calcular probabilidades y decidir) y una <b>interfaz móvil fluida</b>, con calidad de producto real. Después, llevar la app a <b>Android nativo</b> sin perder nada de lo que ya funcionaba.</div></div>
+        <div class="row"><div class="k">Acción</div><div class="v"><b>Versión 1 (Flutter):</b> motor en Dart puro desacoplado de la UI; equity por <b>Monte Carlo + enumeración exacta</b>; calculadora de decisión (pot odds, EV, implied odds); cálculo en <b>isolate</b> para no congelar la interfaz; ~56 tests. <b>Versión 2 (Kotlin):</b> reescritura nativa con <b>Jetpack Compose</b> y Material 3; el motor pasó a un módulo de <b>Kotlin puro</b>, separado de Android, que se prueba en segundos; versiones con SemVer y changelog.</div></div>
+        <div class="row"><div class="k">Resultado</div><div class="v">Calculadora de ODDS que entrega al instante la probabilidad de ganar y una decisión clara (<b>PAGAR / FOLD</b>). La versión Kotlin igualó todo lo de la primera y la superó: <b>tablas de rangos preflop</b> (4 perfiles × 6 posiciones), <b>noticias de póker</b> que se leen sin conexión y una entrada animada más rápida, con <b>116 tests</b> que respaldan el motor y la app. Próximo paso: comunidades y eventos, y su publicación en Play Store.</div></div>
       </div>
-      <p class="dlg-eyebrow">Capturas de la app</p>
+      <p class="dlg-eyebrow">Capturas de la app (versión 1, Flutter)</p>
       <div class="gallery">
         <img src="img/knife-poker-menu.webp" width="540" height="1171" alt="Knife Poker — menú principal" loading="lazy" />
         <img src="img/knife-poker-escuela.webp" width="540" height="1171" alt="Knife Poker — Escuela Poker (herramientas de estudio)" loading="lazy" />
