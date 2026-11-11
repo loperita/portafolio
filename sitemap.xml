@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://loperita.github.io/portafolio/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://loperita.github.io/portafolio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loperita.github.io/portafolio/en/"/>
+  </url>
+  <url>
+    <loc>https://loperita.github.io/portafolio/en/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://loperita.github.io/portafolio/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://loperita.github.io/portafolio/en/"/>
   </url>
 </urlset>

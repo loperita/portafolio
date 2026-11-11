@@ -2,7 +2,7 @@
 
 Sitio web personal de **Pablo Moreno**, desarrollador freelance **Fullstack & Mobile**.
 
-🔗 **En vivo:** https://loperita.github.io/portafolio/
+🔗 **En vivo:** https://loperita.github.io/portafolio/ · versión en inglés: https://loperita.github.io/portafolio/en/
 
 Página única (HTML/CSS/JS embebidos; imágenes en `img/` y fuente Syne en `fonts/`, sin dependencias externas): retrato con recorte de fondo, tema claro/oscuro, animaciones al hacer scroll y modales de caso con galería.
 
@@ -21,3 +21,5 @@ Al inicio de `index.html` está el bloque `SITE_CONFIG`:
 - `posthogKey`: clave pública de PostHog (`phc_...`). Activa la analítica y el registro de clics en botones clave.
 
 Si un valor está vacío, su botón o función queda oculto.
+
+La versión en inglés (`en/index.html`) tiene su propio bloque `SITE_CONFIG` y el mismo diseño: si cambias un valor o un estilo, cámbialo en los dos archivos.
