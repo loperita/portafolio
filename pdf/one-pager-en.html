@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Pablo Moreno — Portfolio (PDF source)</title>
+<!-- Fuente del PDF en inglés. El robot de precios (.github/workflows) actualiza los USD y regenera el PDF. -->
+<style>
+  @font-face { font-family: 'Syne'; font-weight: 600 800; src: url(../fonts/syne-latin.woff2) format('woff2'); }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1b1f16; font-size: 10.5px; line-height: 1.42;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page { width: 210mm; min-height: 297mm; }
+
+  .head { background: linear-gradient(120deg, #2C6844, #1e4a30); color: #eaf1e5; padding: 12mm 13mm 9mm; }
+  .name { font-family: 'Syne', Arial, sans-serif; font-weight: 800; font-size: 34px; letter-spacing: .5px;
+    margin: 0; text-transform: uppercase; color: #ffffff; }
+  .role { font-size: 11px; letter-spacing: 2.2px; text-transform: uppercase; color: #bfe0b4; margin: 5px 0 9px; }
+  .contact { font-size: 9.5px; color: #d7e6cf; line-height: 1.5; }
+  .contact b { color: #ffffff; }
+
+  .body { padding: 9mm 13mm 0; display: grid; grid-template-columns: 1fr 1fr; gap: 9mm; }
+  .sec { margin-bottom: 5.5mm; }
+  h2.t { font-family: Georgia, serif; font-size: 13px; color: #2C6844; margin: 0 0 3mm;
+    padding-bottom: 1.4mm; border-bottom: 1.5px solid #cfd8c4; }
+  .lead { color: #45503c; margin: 0; font-size: 10.5px; }
+  .lead b { color: #1b1f16; }
+
+  .svc { margin-bottom: 3mm; }
+  .svc .n { font-weight: bold; color: #1b1f16; font-size: 10.8px; }
+  .svc .d { color: #55604c; }
+  .svc .p { color: #2C6844; font-weight: bold; font-size: 9.8px; }
+  .svc-note { font-size: 8.4px; color: #8a9179; margin: -1mm 0 0; }
+
+  ul.b { margin: 0; padding: 0; list-style: none; }
+  ul.b li { position: relative; padding-left: 4mm; margin-bottom: 1.9mm; color: #45503c; }
+  ul.b li::before { content: ""; position: absolute; left: 0; top: 4px; width: 5px; height: 5px;
+    background: #4E8A54; border-radius: 1px; transform: rotate(45deg); }
+  ul.b li b { color: #1b1f16; }
+
+  .proj { margin-bottom: 3.4mm; }
+  .proj .pt { font-weight: bold; color: #1b1f16; font-size: 10.8px; }
+  .proj .pd { color: #55604c; margin: .5mm 0; }
+  .proj .tech { color: #2C6844; font-size: 8.8px; font-family: 'Courier New', monospace; }
+
+  .stack-group { margin-bottom: 2.4mm; }
+  .stack-group .gl { font-size: 8.5px; text-transform: uppercase; letter-spacing: 1px; color: #8a9179; margin-bottom: 1.2mm; }
+  .chips { display: flex; flex-wrap: wrap; gap: 1.5mm; }
+  .chip { border: 1px solid #cfd8c4; border-radius: 10px; padding: .6mm 2.2mm; font-size: 8.8px; color: #45503c; }
+
+  .proc { padding: 3mm 13mm 0; }
+  .steps { display: flex; gap: 4mm; margin-top: 1mm; }
+  .step { flex: 1; font-size: 8.6px; color: #55604c; line-height: 1.36; }
+  .step .sn { font-family: 'Courier New', monospace; color: #2C6844; font-weight: bold; font-size: 9px; }
+  .step b { color: #1b1f16; display: block; font-size: 9.4px; margin: .6mm 0; }
+  .foot { margin: 6mm 13mm 0; padding-top: 3mm; border-top: 1.5px solid #cfd8c4;
+    font-size: 9.5px; color: #55604c; display: flex; justify-content: space-between; }
+  .foot b { color: #2C6844; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <h1 class="name">Pablo Moreno</h1>
+    <div class="role">Freelance Developer · Fullstack &amp; Mobile</div>
+    <div class="contact"><b>pablomoreno44@gmail.com</b> &nbsp;·&nbsp; linkedin.com/in/pablo-moreno-develop &nbsp;·&nbsp; github.com/loperita &nbsp;·&nbsp; loperita.github.io/portafolio/en &nbsp;·&nbsp; Remote · Colombia (GMT-5)<br>Languages: Spanish (native) · English (intermediate, B1)</div>
+  </div>
+
+  <div class="body">
+    <div class="col">
+      <div class="sec">
+        <p class="lead">I design and build <b>custom websites and apps</b> — front end, back end and mobile — with clean, tested code that grows with you. One point of contact from start to finish.</p>
+      </div>
+      <div class="sec">
+        <h2 class="t">Services</h2>
+        <div class="svc"><span class="n">Custom web development</span> — <span class="d">from landing page to web app.</span> <span class="p">From <span data-cop="800000">USD&nbsp;245</span></span></div>
+        <div class="svc"><span class="n">Mobile apps</span> — <span class="d">one Android + iOS app built with Flutter.</span> <span class="p">From <span data-cop="3000000">USD&nbsp;910</span></span></div>
+        <div class="svc"><span class="n">Performance optimization</span> — <span class="d">a faster website or app, with metrics.</span> <span class="p">From <span data-cop="350000">USD&nbsp;105</span></span></div>
+        <p class="svc-note">Converted from COP at Colombia's official exchange rate (TRM).</p>
+      </div>
+      <div class="sec">
+        <h2 class="t">Why work with me</h2>
+        <ul class="b">
+          <li><b>One point of contact</b> for front end, back end and mobile: less coordination, lower costs.</li>
+          <li><b>Maintainable, tested code</b>: your project never becomes a black box.</li>
+          <li><b>Plain-language updates</b>: you always know where things stand and why.</li>
+          <li><b>Business first</b>: I solve the problem, not just write code.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="sec">
+        <h2 class="t">Featured projects</h2>
+        <div class="proj">
+          <div class="pt">Knife Poker — Texas Hold'em analysis</div>
+          <div class="pd">Mobile app with its own poker engine: real odds via Monte Carlo and a call/fold decision. ~56 automated tests.</div>
+          <div class="tech">Flutter · Dart · Monte Carlo · CustomPainter</div>
+        </div>
+        <div class="proj">
+          <div class="pt">Katuq — Courier app</div>
+          <div class="pd">Optimized geolocation and routing, integrated Waze/Google Maps, redesigned the UI and added performance tracking. Used by 8 large companies and 15+ small businesses.</div>
+          <div class="tech">Flutter · Dart · Waze · Google Maps</div>
+        </div>
+        <div class="proj">
+          <div class="pt">Katuq — Merchant integration</div>
+          <div class="pd">Integrated Siigo invoicing into the platform and worked on the site's user interface: everything in a single ecosystem.</div>
+          <div class="tech">Angular · Node.js · Express · Firebase · Siigo</div>
+        </div>
+      </div>
+      <div class="sec">
+        <h2 class="t">Tech stack</h2>
+        <div class="stack-group"><div class="gl">Frontend</div><div class="chips"><span class="chip">React</span><span class="chip">Angular</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span></div></div>
+        <div class="stack-group"><div class="gl">Backend</div><div class="chips"><span class="chip">Java · Spring Boot</span><span class="chip">Node.js · Express</span><span class="chip">Python</span><span class="chip">SQL</span></div></div>
+        <div class="stack-group"><div class="gl">Mobile</div><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span></div></div>
+        <div class="stack-group"><div class="gl">Infra &amp; tools</div><div class="chips"><span class="chip">Firebase</span><span class="chip">Git · GitHub</span><span class="chip">AWS (learning)</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="proc">
+    <h2 class="t">How I work</h2>
+    <div class="steps">
+      <div class="step"><span class="sn">01</span><b>Discovery</b>A short call to understand your goal. Free.</div>
+      <div class="step"><span class="sn">02</span><b>Proposal</b>Scope, deliverables, timeline and price, in writing.</div>
+      <div class="step"><span class="sn">03</span><b>Development</b>I build in blocks you can see and test.</div>
+      <div class="step"><span class="sn">04</span><b>Launch</b>A working product, documented and explained.</div>
+      <div class="step"><span class="sn">05</span><b>Support</b>Ongoing help for tweaks and growth.</div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Live portfolio: <b>loperita.github.io/portafolio/en</b></span>
+    <span>First discovery call <b>free</b> · pablomoreno44@gmail.com</span>
+  </div>
+</div>
+</body>
+</html>
