@@ -28,3 +28,9 @@ La versión en inglés (`en/index.html`) tiene su propio bloque `SITE_CONFIG` y 
 Los precios base están en COP (atributo `data-cop`). Todos los días a las 00:00 hora Colombia, la tarea `.github/workflows/actualizar-precios.yml` consulta la TRM oficial (datos.gov.co), recalcula los USD en `en/index.html` y en `pdf/one-pager-en.html`, y si cambian regenera `Pablo-Moreno-Portfolio-EN.pdf`. Se puede correr a mano desde la pestaña **Actions** → *Actualizar precios (TRM)* → *Run workflow*.
 
 Como esa tarea hace commits en `main`, haz `git pull` antes de editar.
+
+## PDF del perfil
+- Español: `Pablo-Moreno-Portafolio.pdf`, generado desde `pdf/one-pager-es.html`.
+- Inglés: `Pablo-Moreno-Portfolio-EN.pdf`, generado desde `pdf/one-pager-en.html` (los precios los actualiza la tarea diaria).
+
+Para regenerarlos: abrir el HTML en Chrome → Imprimir → Guardar como PDF, A4, sin márgenes ni encabezados.
